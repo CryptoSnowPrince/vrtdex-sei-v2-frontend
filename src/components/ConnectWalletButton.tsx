@@ -5,7 +5,6 @@ import useAuth from 'hooks/useAuth'
 import { useActiveHandle } from 'hooks/useEagerConnect.bmp.ts'
 import { useTranslation } from '@pancakeswap/localization'
 import Trans from './Trans'
-import styled from 'styled-components'
 
 // const MediaButton = styled(Button) => {}
 

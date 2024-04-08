@@ -14,8 +14,6 @@ import { CurrencyLogo, DoubleCurrencyLogo } from '../Logo'
 import { Input as NumericalInput } from './NumericalInput'
 import { CopyButton } from '../CopyButton'
 import AddToWalletButton from '../AddToWallet/AddToWalletButton'
-import { useEffect } from 'react'
-import { curry } from 'lodash'
 
 const InputRow = styled.div<{ selected: boolean }>`
   display: flex;

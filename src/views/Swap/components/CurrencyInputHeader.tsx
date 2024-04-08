@@ -18,7 +18,7 @@ import { useCallback } from 'react'
 import { SettingsMode } from '../../../components/Menu/GlobalSettings/types'
 
 interface Props {
-  title: String
+  title: string
   noConfig?: boolean
   setIsChartDisplayed?: React.Dispatch<React.SetStateAction<boolean>>
   isChartDisplayed?: boolean
