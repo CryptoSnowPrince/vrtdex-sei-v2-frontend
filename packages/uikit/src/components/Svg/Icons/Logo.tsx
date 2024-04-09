@@ -27,7 +27,7 @@ const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
     // </Svg>
     <img
       // src="/logowithtext.png"
-      src="./logowithtext.png"
+      src="/logowithtext.png"
       height="auto"
       width="192px"
       alt="logo"
