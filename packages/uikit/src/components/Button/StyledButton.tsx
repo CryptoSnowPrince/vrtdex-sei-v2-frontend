@@ -83,10 +83,10 @@ const StyledButton = styled.button<BaseButtonProps>`
   ${variant({
     variants: styleVariants,
   })}
-  @media screen and (max-width: 576px) {
-    height: 36px;
-    padding: 0 12px;
-  }
+  // @media screen and (max-width: 576px) {
+  //   height: 36px;
+  //   padding: 0 12px;
+  // }
   ${layout}
   ${space}
   ${({ decorator, theme }) =>

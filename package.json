@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
-    "dev": "next dev",
+    "dev": "PORT=3008 next dev",
     "build": "next build",
     "start": "PORT=3006 next start",
     "test": "jest",

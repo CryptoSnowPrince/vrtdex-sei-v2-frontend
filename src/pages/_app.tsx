@@ -67,7 +67,7 @@ function MyApp(props: AppProps) {
         />
         <meta name="description" content="Discover Fluidex, the leading DEX on SEI Chain (SEI) for VRT." />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://fluidex.metabest.tech/logo.png" />
+        <meta name="twitter:image" content="/logo.png" />
         <meta name="twitter:description" content="The most popular AMM on SEI!" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fluidex - A next evolution DeFi exchange on SEI Chain (SEI)" />
