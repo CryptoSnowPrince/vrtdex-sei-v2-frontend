@@ -91,8 +91,8 @@ export const bsc: Chain = {
     etherscan: bscExplorer,
   },
   multicall: {
-    address: '0xd0257FAE7bECEDD21b3f93e31048D9729c0AbE2f',
-    blockCreated: 1463669,
+    address: '0x530843f12cF0E3285707AC57AaAed606F7EEb0cf',
+    blockCreated: 14225719,
   },
   nativeCurrency: {
     name: 'SEI',

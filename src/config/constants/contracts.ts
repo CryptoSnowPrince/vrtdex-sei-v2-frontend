@@ -18,7 +18,7 @@ export default {
   // TODO: multi
   multiCall: {
     97: '0x8F3273Fb89B075b1645095ABaC6ed17B2d4Bc576',
-    713715: '0xEe8d287B844959ADe40d718Dc23077ba920e2f07',
+    713715: '0x530843f12cF0E3285707AC57AaAed606F7EEb0cf',
   },
   pancakeProfile: {
     713715: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',

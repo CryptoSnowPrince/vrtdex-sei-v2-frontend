@@ -7,7 +7,7 @@ const tokens = {
     address: {
       56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
-      713715: "0x67056f04e0B41C8350dbBb848A4909E2aF49D2f0",
+      713715: "0x2781F210E1f627509bAa50B15333bED967e413A2",
     },
     decimals: 18,
     projectLink: "https://seitrace.com/",
@@ -438,7 +438,7 @@ const tokens = {
   wbnb: {
     symbol: "WSEI",
     address: {
-      713715: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      713715: "0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22",
       56: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       97: "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
     },

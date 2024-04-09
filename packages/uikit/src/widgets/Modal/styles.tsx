@@ -59,7 +59,6 @@ export const ModalContainer = styled(MotionBox)<{ $minWidth: string }>`
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 32px;
-  width: 40%;
   max-height: calc(var(--vh, 1vh) * 100);
   z-index: ${({ theme }) => theme.zIndices.modal};
   position: absolute;

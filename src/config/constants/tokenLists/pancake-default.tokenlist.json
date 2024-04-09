@@ -11,6 +11,30 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
+      "name": "Wrapped SEI",
+      "symbol": "WSEI",
+      "address": "0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22",
+      "chainId": 713715,
+      "decimals": 18,
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22.png"
+    },
+    {
+      "name": "VRToken",
+      "symbol": "VRT",
+      "address": "0x2781F210E1f627509bAa50B15333bED967e413A2",
+      "chainId": 713715,
+      "decimals": 18,
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x2781F210E1f627509bAa50B15333bED967e413A2.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x6572bee203c2906175D5AcDbd11917E06Cc1D545",
+      "chainId": 713715,
+      "decimals": 18,
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x6572bee203c2906175D5AcDbd11917E06Cc1D545.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",

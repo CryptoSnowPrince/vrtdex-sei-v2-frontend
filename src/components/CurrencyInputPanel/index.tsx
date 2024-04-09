@@ -145,7 +145,6 @@ export default function CurrencyInputPanel({
   )
   // console.log("currencypanel: ", currency);
 
-
   return (
     <Box position="relative" id={id}>
       <InputPanel>
@@ -174,7 +173,7 @@ export default function CurrencyInputPanel({
                 {t('Max').toLocaleUpperCase(locale)}
               </Button>
             )}
-            
+
             <Flex alignItems="center" justifyContent="space-between">
               <Flex>
                 {beforeButton}
@@ -235,21 +234,23 @@ export default function CurrencyInputPanel({
                   </Flex>
                 ) : null}
               </Flex>
-              {account && (
-                <Text
-                  onClick={!disabled && onMax}
-                  color="textSubtle"
-                  fontSize="14px"
-                  style={{ display: 'inline', cursor: 'pointer' }}
-                >
-                  {!hideBalance && !!currency
-                    ? t('Balance: %balance%', { balance: selectedCurrencyBalance?.toSignificant(6) ?? t('Loading') })
-                    : ' -'}
-                </Text>
-              )}
             </Flex>
           </InputRow>
         </Container>
+        {account && (
+          <Flex style={{ gap: '4px' }} ml="4px" justifyContent="end">
+            <Text
+              onClick={!disabled && onMax}
+              color="textSubtle"
+              fontSize="14px"
+              style={{ display: 'inline', cursor: 'pointer' }}
+            >
+              {!hideBalance && !!currency
+                ? t('Balance: %balance%', { balance: selectedCurrencyBalance?.toSignificant(6) ?? t('Loading') })
+                : ' -'}
+            </Text>
+          </Flex>
+        )}
         {disabled && <Overlay />}
       </InputPanel>
     </Box>

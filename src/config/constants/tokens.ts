@@ -2,10 +2,10 @@ import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
 
 const VRTDEX_MAINNET = new Token(
   ChainId.BSC,
-  '0x67056f04e0B41C8350dbBb848A4909E2aF49D2f0',
+  '0x2781F210E1f627509bAa50B15333bED967e413A2',
   18,
   'VRT',
-  'VRT',
+  'VRToken',
   'https://seitrace.com/',
 )
 
@@ -14,7 +14,7 @@ const VRTDEX_TESTNET = new Token(
   '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
   18,
   'VRT',
-  'VRT Token',
+  'VRToken',
   'https://pancakeswap.finance/',
 )
 
@@ -1557,14 +1557,6 @@ export const bscTokens = {
     'EZ',
     'Easy V2 Token',
     'https://easyfi.network/',
-  ),
-  vrt: new Token(
-    ChainId.BSC,
-    '0x5F84ce30DC3cF7909101C69086c50De191895883',
-    18,
-    'VRT',
-    'Venus Reward Token',
-    'https://venus.io/',
   ),
   tusd: new Token(
     ChainId.BSC,
