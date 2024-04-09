@@ -1,16 +1,16 @@
-const FLUIDEX_EXTENDED = 'https://tokens.pancakeswap.finance/pancakeswap-extended.json'
+const VRTDEX_EXTENDED = 'https://tokens.pancakeswap.finance/pancakeswap-extended.json'
 const COINGECKO = 'https://tokens.pancakeswap.finance/coingecko.json'
 const CMC = 'https://tokens.pancakeswap.finance/cmc.json'
 
 // List of official tokens list
-export const OFFICIAL_LISTS = [FLUIDEX_EXTENDED]
+export const OFFICIAL_LISTS = [VRTDEX_EXTENDED]
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 export const WARNING_LIST_URLS: string[] = []
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [
-  FLUIDEX_EXTENDED,
+  VRTDEX_EXTENDED,
   CMC,
   COINGECKO,
   ...UNSUPPORTED_LIST_URLS, // need to load unsupported tokens as well

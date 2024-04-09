@@ -20,7 +20,7 @@ import {
 } from './styles'
 import { PancakeSquadHeaderType } from './types'
 
-const DEFAULT_FLUIDEX_COST = 15
+const DEFAULT_VRTDEX_COST = 15
 const DEFAULT_MAX_TICKETS = 10
 
 const PancakeSquadHeader: React.FC<React.PropsWithChildren<PancakeSquadHeaderType>> = ({
@@ -77,14 +77,14 @@ const PancakeSquadHeader: React.FC<React.PropsWithChildren<PancakeSquadHeaderTyp
       </Text>
       <Text color={lightColors.warning} textAlign="center" bold>
         {t('Mint Cost: %minCost% VRT each', {
-          minCost: DEFAULT_FLUIDEX_COST,
+          minCost: DEFAULT_VRTDEX_COST,
         })}
       </Text>
       <Text color={lightColors.warning} textAlign="center" bold>
         {t('Max per wallet: %maxPerWallet%', { maxPerWallet: DEFAULT_MAX_TICKETS })}
       </Text>
       <Text color={lightColors.invertedContrast} textAlign="center">
-        {t('Fluidex’s first official generative NFT collection.')}
+        {t('Vrtdex’s first official generative NFT collection.')}
       </Text>
       <Text color={lightColors.invertedContrast} mb={!displayEventBlock ? '80px' : '32px'} textAlign="center">
         {t('Join the squad.')}

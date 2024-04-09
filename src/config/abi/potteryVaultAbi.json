@@ -12,7 +12,7 @@
         "type": "address"
       },
       {
-        "internalType": "contract IFluidexPotteryDraw",
+        "internalType": "contract IVrtdexPotteryDraw",
         "name": "_potteryDraw",
         "type": "address"
       },

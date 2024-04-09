@@ -1,7 +1,7 @@
 import { Bet, BetPosition, Round, PredictionUser } from 'state/types'
 import numberOrNull from 'utils/numberOrNull'
 
-import { RoundResponseFLUIDEX } from './cakeQueries'
+import { RoundResponseVRTDEX } from './cakeQueries'
 
 const getRoundPosition = (positionResponse: string) => {
   if (positionResponse === 'Bull') {
@@ -19,7 +19,7 @@ const getRoundPosition = (positionResponse: string) => {
   return null
 }
 
-export const transformBetResponseFLUIDEX = (betResponse): Bet => {
+export const transformBetResponseVRTDEX = (betResponse): Bet => {
   const bet = {
     id: betResponse.id,
     hash: betResponse.hash,
@@ -30,24 +30,24 @@ export const transformBetResponseFLUIDEX = (betResponse): Bet => {
     claimedAt: numberOrNull(betResponse.claimedAt),
     claimedBlock: numberOrNull(betResponse.claimedBlock),
     claimedHash: betResponse.claimedHash,
-    claimedBNB: betResponse.claimedFLUIDEX ? parseFloat(betResponse.claimedFLUIDEX) : 0,
-    claimedNetBNB: betResponse.claimedNetFLUIDEX ? parseFloat(betResponse.claimedNetFLUIDEX) : 0,
+    claimedBNB: betResponse.claimedVRTDEX ? parseFloat(betResponse.claimedVRTDEX) : 0,
+    claimedNetBNB: betResponse.claimedNetVRTDEX ? parseFloat(betResponse.claimedNetVRTDEX) : 0,
     createdAt: numberOrNull(betResponse.createdAt),
     updatedAt: numberOrNull(betResponse.updatedAt),
   } as Bet
 
   if (betResponse.user) {
-    bet.user = transformUserResponseFLUIDEX(betResponse.user)
+    bet.user = transformUserResponseVRTDEX(betResponse.user)
   }
 
   if (betResponse.round) {
-    bet.round = transformRoundResponseFLUIDEX(betResponse.round)
+    bet.round = transformRoundResponseVRTDEX(betResponse.round)
   }
 
   return bet
 }
 
-export const transformUserResponseFLUIDEX = (userResponse): PredictionUser => {
+export const transformUserResponseVRTDEX = (userResponse): PredictionUser => {
   const {
     id,
     createdAt,
@@ -56,14 +56,14 @@ export const transformUserResponseFLUIDEX = (userResponse): PredictionUser => {
     totalBets,
     totalBetsBull,
     totalBetsBear,
-    totalFLUIDEX,
-    totalFLUIDEXBull,
-    totalFLUIDEXBear,
+    totalVRTDEX,
+    totalVRTDEXBull,
+    totalVRTDEXBear,
     totalBetsClaimed,
-    totalFLUIDEXClaimed,
+    totalVRTDEXClaimed,
     winRate,
-    averageFLUIDEX,
-    netFLUIDEX,
+    averageVRTDEX,
+    netVRTDEX,
   } = userResponse || {}
 
   return {
@@ -74,18 +74,18 @@ export const transformUserResponseFLUIDEX = (userResponse): PredictionUser => {
     totalBets: numberOrNull(totalBets),
     totalBetsBull: numberOrNull(totalBetsBull),
     totalBetsBear: numberOrNull(totalBetsBear),
-    totalBNB: totalFLUIDEX ? parseFloat(totalFLUIDEX) : 0,
-    totalBNBBull: totalFLUIDEXBull ? parseFloat(totalFLUIDEXBull) : 0,
-    totalBNBBear: totalFLUIDEXBear ? parseFloat(totalFLUIDEXBear) : 0,
+    totalBNB: totalVRTDEX ? parseFloat(totalVRTDEX) : 0,
+    totalBNBBull: totalVRTDEXBull ? parseFloat(totalVRTDEXBull) : 0,
+    totalBNBBear: totalVRTDEXBear ? parseFloat(totalVRTDEXBear) : 0,
     totalBetsClaimed: numberOrNull(totalBetsClaimed),
-    totalBNBClaimed: totalFLUIDEXClaimed ? parseFloat(totalFLUIDEXClaimed) : 0,
+    totalBNBClaimed: totalVRTDEXClaimed ? parseFloat(totalVRTDEXClaimed) : 0,
     winRate: winRate ? parseFloat(winRate) : 0,
-    averageBNB: averageFLUIDEX ? parseFloat(averageFLUIDEX) : 0,
-    netBNB: netFLUIDEX ? parseFloat(netFLUIDEX) : 0,
+    averageBNB: averageVRTDEX ? parseFloat(averageVRTDEX) : 0,
+    netBNB: netVRTDEX ? parseFloat(netVRTDEX) : 0,
   }
 }
 
-export const transformRoundResponseFLUIDEX = (roundResponse: RoundResponseFLUIDEX): Round => {
+export const transformRoundResponseVRTDEX = (roundResponse: RoundResponseVRTDEX): Round => {
   const {
     id,
     epoch,
@@ -137,6 +137,6 @@ export const transformRoundResponseFLUIDEX = (roundResponse: RoundResponseFLUIDE
     bullAmount: bullAmount ? parseFloat(bullAmount) : 0,
     bearBets: numberOrNull(bearBets),
     bearAmount: bearAmount ? parseFloat(bearAmount) : 0,
-    bets: bets.map(transformBetResponseFLUIDEX),
+    bets: bets.map(transformBetResponseVRTDEX),
   }
 }

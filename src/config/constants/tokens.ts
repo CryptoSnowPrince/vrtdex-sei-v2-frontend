@@ -1,6 +1,6 @@
 import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
 
-const FLUIDEX_MAINNET = new Token(
+const VRTDEX_MAINNET = new Token(
   ChainId.BSC,
   '0x67056f04e0B41C8350dbBb848A4909E2aF49D2f0',
   18,
@@ -9,7 +9,7 @@ const FLUIDEX_MAINNET = new Token(
   'https://seitrace.com/',
 )
 
-const FLUIDEX_TESTNET = new Token(
+const VRTDEX_TESTNET = new Token(
   ChainId.BSC_TESTNET,
   '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
   18,
@@ -42,8 +42,8 @@ export const USDC = {
 }
 
 export const VRT = {
-  [ChainId.BSC]: FLUIDEX_MAINNET,
-  [ChainId.BSC_TESTNET]: FLUIDEX_TESTNET,
+  [ChainId.BSC]: VRTDEX_MAINNET,
+  [ChainId.BSC_TESTNET]: VRTDEX_TESTNET,
 }
 
 const BUSD_MAINNET = new Token(
@@ -73,7 +73,7 @@ export const bscTokens = {
   wbnb: WBNB[ChainId.BSC],
   // bnb here points to the wbnb contract. Wherever the currency SEI is required, conditional checks for the symbol 'SEI' can be used
   bnb: new Token(ChainId.BSC, '0x26841a0A5D958B128209F4ea9a1DD7E61558c330', 18, 'SEI', 'SEI', 'https://seitrace.com/'),
-  cake: FLUIDEX_MAINNET,
+  cake: VRTDEX_MAINNET,
   gmi: new Token(ChainId.BSC, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   tlos: new Token(
     ChainId.BSC,
@@ -289,7 +289,7 @@ export const bscTokens = {
     ChainId.BSC,
     '0xdB8D30b74bf098aF214e862C90E647bbB1fcC58c',
     18,
-    'BABYFLUIDEX',
+    'BABYVRTDEX',
     'Baby Cake Token',
     'https://babycake.app/',
   ),
@@ -2343,7 +2343,7 @@ export const bscTokens = {
 
 export const bscTestnetTokens = {
   wbnb: WBNB[ChainId.BSC_TESTNET],
-  cake: FLUIDEX_TESTNET,
+  cake: VRTDEX_TESTNET,
   busd: BUSD_TESTNET,
   syrup: new Token(
     ChainId.BSC_TESTNET,

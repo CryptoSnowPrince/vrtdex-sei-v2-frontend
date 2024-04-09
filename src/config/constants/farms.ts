@@ -4,7 +4,7 @@ import { SerializedFarmConfig } from './types'
 
 const serializedTokens = serializeTokens(bscTokens)
 
-export const FLUIDEX_BNB_LP_MAINNET = '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0'
+export const VRTDEX_BNB_LP_MAINNET = '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0'
 
 const farms: SerializedFarmConfig[] = [
   /**
@@ -27,7 +27,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'VRT-SEI LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      713715: FLUIDEX_BNB_LP_MAINNET,
+      713715: VRTDEX_BNB_LP_MAINNET,
     },
     token: serializedTokens.cake,
     quoteToken: serializedTokens.wbnb,

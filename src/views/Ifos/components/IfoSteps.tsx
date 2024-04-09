@@ -73,14 +73,14 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
     <Box>
       <Text>
         {t(
-          'The number of iFLUIDEX equals the locked staking amount if the staking duration is longer than %weeks% weeks. If the staking duration is less than %weeks% weeks, it will linearly decrease based on the staking duration.',
+          'The number of iVRTDEX equals the locked staking amount if the staking duration is longer than %weeks% weeks. If the staking duration is less than %weeks% weeks, it will linearly decrease based on the staking duration.',
           {
             weeks: weeksDisplay,
           },
         )}
       </Text>
       <InlineLink external href="https://docs.pancakeswap.finance/products/ifo-initial-farm-offering/icake">
-        {t('Learn more about iFLUIDEX')}
+        {t('Learn more about iVRTDEX')}
       </InlineLink>
     </Box>,
     {},
@@ -95,15 +95,15 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
       <Box>
         <Text mb="4px" color="textSubtle" small>
           {t(
-            'The maximum amount of VRT you can commit to the Public Sale equals the number of your iFLUIDEX. Lock more VRT for longer durations to increase the maximum VRT you can commit to the sale.',
+            'The maximum amount of VRT you can commit to the Public Sale equals the number of your iVRTDEX. Lock more VRT for longer durations to increase the maximum VRT you can commit to the sale.',
           )}
         </Text>
         <TooltipText as="span" fontWeight={700} ref={targetRef} color="textSubtle" small>
-          {t('How does the number of iFLUIDEX calculated?')}
+          {t('How does the number of iVRTDEX calculated?')}
         </TooltipText>
         <Text mt="4px" color="textSubtle" small>
           {t(
-            'Missed this IFO? You will enjoy the same amount of iFLUIDEX for future IFOs if your locked-staking position is not unlocked.',
+            'Missed this IFO? You will enjoy the same amount of iVRTDEX for future IFOs if your locked-staking position is not unlocked.',
           )}
         </Text>
       </Box>
@@ -216,7 +216,7 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active Fluidex Profile to take part in an IFO!')}
+              {t('You’ll need an active Vrtdex Profile to take part in an IFO!')}
             </Text>
             {renderAccountStatus()}
           </CardBody>

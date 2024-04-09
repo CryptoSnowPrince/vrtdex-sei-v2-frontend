@@ -17,11 +17,11 @@ const config = [
         no participation fee.
       </Trans>,
       <Trans>
-        In the Public Sale, everyone with an active Fluidex profile can commit. However the maximum amount of VRT
-        users can commit, is equal to the number of iFLUIDEX they have.
+        In the Public Sale, everyone with an active Vrtdex profile can commit. However the maximum amount of VRT users
+        can commit, is equal to the number of iVRTDEX they have.
       </Trans>,
       <>
-        <Trans>Learn more about iFLUIDEX</Trans>
+        <Trans>Learn more about iVRTDEX</Trans>
         <InlineLink ml="4px" external href="https://docs.pancakeswap.finance/products/ifo-initial-farm-offering/icake">
           <Trans>here</Trans>
         </InlineLink>
@@ -37,7 +37,7 @@ const config = [
         We recommend you to check if you are eligible to participate in the Private Sale first. In the Public Sale, if
         the amount you commit is too small, you may not receive a meaningful amount of IFO tokens.
       </Trans>,
-      <Trans>Just remember you need an active Fluidex Profile in order to participate.</Trans>,
+      <Trans>Just remember you need an active Vrtdex Profile in order to participate.</Trans>,
     ],
   },
   {

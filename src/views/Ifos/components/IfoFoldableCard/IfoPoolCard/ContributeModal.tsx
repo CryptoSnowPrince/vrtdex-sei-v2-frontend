@@ -163,7 +163,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
     <Box>
       <Text display="inline">{t('For the public sale, Max VRT entry is capped by')} </Text>
       <Text bold display="inline">
-        {t('the number of iFLUIDEX.')}{' '}
+        {t('the number of iVRTDEX.')}{' '}
       </Text>
       <Text display="inline">
         {t('Lock more VRT for longer durations to increase the maximum number of VRT you can commit to the sale.')}

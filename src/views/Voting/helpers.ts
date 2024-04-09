@@ -4,7 +4,7 @@ import { BIG_TEN } from 'utils/bigNumber'
 import { bscTokens } from 'config/constants/tokens'
 import { Proposal, ProposalState, ProposalType, Vote } from 'state/types'
 import { getCakeVaultAddress } from 'utils/addressHelpers'
-import { ADMINS, FLUIDEX_SPACE, SNAPSHOT_VERSION } from './config'
+import { ADMINS, VRTDEX_SPACE, SNAPSHOT_VERSION } from './config'
 import { getScores } from './getScores'
 import * as strategies from './strategies'
 
@@ -61,7 +61,7 @@ export const generatePayloadData = () => {
   return {
     version: SNAPSHOT_VERSION,
     timestamp: (Date.now() / 1e3).toFixed(),
-    space: FLUIDEX_SPACE,
+    space: VRTDEX_SPACE,
   }
 }
 
@@ -128,7 +128,7 @@ export const getVotingPower = async (
       lockedEndTime,
       ifoPoolBalance,
     ] = await getScores(
-      FLUIDEX_SPACE,
+      VRTDEX_SPACE,
       [
         strategies.cakeBalanceStrategy(version),
         strategies.cakeBnbLpBalanceStrategy(version),
@@ -168,7 +168,7 @@ export const getVotingPower = async (
     }
   }
 
-  const [total] = await getScores(FLUIDEX_SPACE, STRATEGIES, NETWORK, [account], blockNumber)
+  const [total] = await getScores(VRTDEX_SPACE, STRATEGIES, NETWORK, [account], blockNumber)
 
   return {
     total: total[account] ? total[account] : 0,
@@ -209,7 +209,7 @@ export const getTotalFromVotes = (votes: Vote[]) => {
  * Get voting power by a list of voters, only total
  */
 export async function getVotingPowerByCakeStrategy(voters: string[], blockNumber: number) {
-  const strategyResponse = await getScores(FLUIDEX_SPACE, STRATEGIES, NETWORK, voters, blockNumber)
+  const strategyResponse = await getScores(VRTDEX_SPACE, STRATEGIES, NETWORK, voters, blockNumber)
 
   const result = voters.reduce<Record<string, string>>((accum, voter) => {
     const defaultTotal = strategyResponse.reduce(

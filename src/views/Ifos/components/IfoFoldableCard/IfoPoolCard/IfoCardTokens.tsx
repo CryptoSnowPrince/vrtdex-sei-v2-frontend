@@ -158,8 +158,8 @@ const IfoCardTokens: React.FC<React.PropsWithChildren<IfoCardTokensProps>> = ({
           <Box>
             <MessageText display="inline">
               {publicIfoData.status === 'finished'
-                ? t('Activate Fluidex Profile to take part in next IFO‘s!')
-                : t('You need an active Fluidex Profile to take part in an IFO!')}
+                ? t('Activate Vrtdex Profile to take part in next IFO‘s!')
+                : t('You need an active Vrtdex Profile to take part in an IFO!')}
             </MessageText>{' '}
             <MessageTextLink href="/ifo#ifo-how-to" color="#D67E0A" display="inline">
               {t('How does it work?')} »
@@ -201,7 +201,7 @@ const IfoCardTokens: React.FC<React.PropsWithChildren<IfoCardTokensProps>> = ({
       message = (
         <Message my="24px" p="8px" variant="danger">
           <Box>
-            <MessageText display="inline">{t('You don’t have any iFLUIDEX available for IFO public sale.')}</MessageText>{' '}
+            <MessageText display="inline">{t('You don’t have any iVRTDEX available for IFO public sale.')}</MessageText>{' '}
             <MessageTextLink display="inline" fontWeight={700} href="/ifo#ifo-how-to" color="failure">
               {t('How does it work?')} »
             </MessageTextLink>

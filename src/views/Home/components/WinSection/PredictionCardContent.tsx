@@ -44,7 +44,7 @@ const PredictionCardContent = () => {
   })
 
   const bnbWonInUsd = multiplyPriceByAmount(bnbBusdPrice, data?.totalWonBNB || 0)
-  const cakeWonInUsd = multiplyPriceByAmount(cakePriceBusd, data?.totalWonFLUIDEX || 0)
+  const cakeWonInUsd = multiplyPriceByAmount(cakePriceBusd, data?.totalWonVRTDEX || 0)
 
   const localisedBnbUsdString = formatLocalisedCompactNumber(bnbWonInUsd + cakeWonInUsd)
   const bnbWonText = t('$%wonInUsd% in SEI + VRT won so far', { wonInUsd: localisedBnbUsdString })

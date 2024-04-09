@@ -1,8 +1,8 @@
 {
-  "short_name": "VRTdex",
-  "name": "VRTdex",
-  "description": "Fluidex LP Tokens",
-  "homepage_url": "https://fluidex.finance",
+  "short_name": "VRTDex",
+  "name": "VRTDex",
+  "description": "VRTDex LP Tokens",
+  "homepage_url": "https://v2.vrtdex.metabest.tech/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

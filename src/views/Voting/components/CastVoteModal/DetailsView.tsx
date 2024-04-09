@@ -88,7 +88,7 @@ const DetailsView: React.FC<React.PropsWithChildren<DetailsViewProps>> = ({
           <Text>
             {isBoostingExpired
               ? t(
-                  'Your vFLUIDEX boosting was expired at the snapshot block. Renew your fixed-term staking position to activate the boost for future voting proposals.',
+                  'Your vVRTDEX boosting was expired at the snapshot block. Renew your fixed-term staking position to activate the boost for future voting proposals.',
                 )
               : t(
                   'Voting power is calculated using the staking amount and remaining staking duration of the fixed-term VRT staking position at the block.',
@@ -182,7 +182,7 @@ const DetailsView: React.FC<React.PropsWithChildren<DetailsViewProps>> = ({
                   <Flex>
                     <RocketIcon color={isBoostingExpired ? 'warning' : 'secondary'} width="15px" height="15px" />
                     <Text ml="4px" color={isBoostingExpired ? 'warning' : 'secondary'} fontSize="12px">
-                      {isBoostingExpired ? t('Boosting Expired') : t('Boosted by vFLUIDEX')}
+                      {isBoostingExpired ? t('Boosting Expired') : t('Boosted by vVRTDEX')}
                     </Text>
                   </Flex>
                 </Flex>

@@ -20,10 +20,10 @@ import AuctionCakeBurn from './components/AuctionCakeBurn'
 
 const FAQS_BG_LIGHT = 'linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)'
 const FAQ_BG_DARK = 'linear-gradient(180deg, #434575 0%, #66578D 100%)'
-const FLUIDEX_BURN_BG_LIGHT = 'radial-gradient(50% 79.31% at 50% 50%, #FAF9FA 0%, #EAECF4 100%)'
-const FLUIDEX_BURN_TOP_FILL_LIGHT = 'radial-gradient(ellipse at bottom, #f0f1f6, #EAECF4)'
-const FLUIDEX_BURN_BG_DARK = 'radial-gradient(103.12% 50% at 50% 50%, #152534 0%, #191326 100%)'
-const FLUIDEX_BURN_TOP_FILL_DARK = '#191326'
+const VRTDEX_BURN_BG_LIGHT = 'radial-gradient(50% 79.31% at 50% 50%, #FAF9FA 0%, #EAECF4 100%)'
+const VRTDEX_BURN_TOP_FILL_LIGHT = 'radial-gradient(ellipse at bottom, #f0f1f6, #EAECF4)'
+const VRTDEX_BURN_BG_DARK = 'radial-gradient(103.12% 50% at 50% 50%, #152534 0%, #191326 100%)'
+const VRTDEX_BURN_TOP_FILL_DARK = '#191326'
 
 const StyledHeader = styled(PageHeader)`
   max-height: max-content;
@@ -98,7 +98,7 @@ const FarmAuction = () => {
               {t('Community Farm Auction')}
             </Heading>
             <Text color="textSubtle" mb="24px">
-              {t('Each week, qualifying projects can bid VRT for the right to host a 7-day Farm on Fluidex.')}
+              {t('Each week, qualifying projects can bid VRT for the right to host a 7-day Farm on Vrtdex.')}
             </Text>
             <Text color="textSubtle">{t('This page is for projects to bid for farms.')}</Text>
             <Text color="textSubtle" mb="24px">
@@ -146,18 +146,18 @@ const FarmAuction = () => {
           </AuctionContainer>
         </PageSection>
         <PageSection
-          background={theme.isDark ? FLUIDEX_BURN_BG_DARK : FLUIDEX_BURN_BG_LIGHT}
+          background={theme.isDark ? VRTDEX_BURN_BG_DARK : VRTDEX_BURN_BG_LIGHT}
           index={2}
           innerProps={{ style: { width: '100%' } }}
           dividerPosition="top"
-          dividerFill={{ light: FLUIDEX_BURN_TOP_FILL_LIGHT, dark: FLUIDEX_BURN_TOP_FILL_DARK }}
+          dividerFill={{ light: VRTDEX_BURN_TOP_FILL_LIGHT, dark: VRTDEX_BURN_TOP_FILL_DARK }}
         >
           <AuctionCakeBurn />
         </PageSection>
         <PageSection
           background={theme.isDark ? FAQ_BG_DARK : FAQS_BG_LIGHT}
           clipFill={{ light: '#CBD7EF', dark: '#434575' }}
-          dividerFill={{ light: FLUIDEX_BURN_BG_LIGHT, dark: FLUIDEX_BURN_BG_DARK }}
+          dividerFill={{ light: VRTDEX_BURN_BG_LIGHT, dark: VRTDEX_BURN_BG_DARK }}
           concaveDivider
           index={3}
           dividerPosition="top"

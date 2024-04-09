@@ -1,6 +1,6 @@
 import addresses from 'config/constants/contracts'
 
-import { GRAPH_API_PREDICTION_FLUIDEX, GRAPH_API_PREDICTION_BNB } from 'config/constants/endpoints'
+import { GRAPH_API_PREDICTION_VRTDEX, GRAPH_API_PREDICTION_BNB } from 'config/constants/endpoints'
 import { getAddress } from 'utils/addressHelpers'
 import { bscTokens } from 'config/constants/tokens'
 import { BigNumber } from '@ethersproject/bignumber'
@@ -16,9 +16,9 @@ export default {
     token: bscTokens.bnb,
   },
   VRT: {
-    address: getAddress(addresses.predictionsFLUIDEX),
-    api: GRAPH_API_PREDICTION_FLUIDEX,
-    chainlinkOracleAddress: getAddress(addresses.chainlinkOracleFLUIDEX),
+    address: getAddress(addresses.predictionsVRTDEX),
+    api: GRAPH_API_PREDICTION_VRTDEX,
+    chainlinkOracleAddress: getAddress(addresses.chainlinkOracleVRTDEX),
     minPriceUsdDisplayed: DEFAULT_MIN_PRICE_USD_DISPLAYED,
     token: bscTokens.cake,
   },

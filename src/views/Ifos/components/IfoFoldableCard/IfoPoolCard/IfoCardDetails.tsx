@@ -63,7 +63,7 @@ const MaxTokenEntry = ({ maxToken, ifo, poolId }: { maxToken: number; ifo: Ifo; 
           'For the private sale, each eligible participant will be able to commit any amount of VRT up to the maximum commit limit, which is published along with the IFO voting proposal.',
         )
       : t(
-          'For the basic sale, Max VRT entry is capped by minimum between your average VRT balance in the iFLUIDEX, or the pool’s hard cap. To increase the max entry, Stake more VRT into the iFLUIDEX',
+          'For the basic sale, Max VRT entry is capped by minimum between your average VRT balance in the iVRTDEX, or the pool’s hard cap. To increase the max entry, Stake more VRT into the iVRTDEX',
         )
 
   const unlimitedToolipContent =
@@ -71,7 +71,7 @@ const MaxTokenEntry = ({ maxToken, ifo, poolId }: { maxToken: number; ifo: Ifo; 
       <Box>
         <Text display="inline">{t('For the public sale, Max VRT entry is capped by')} </Text>
         <Text bold display="inline">
-          {t('the number of iFLUIDEX.')}{' '}
+          {t('the number of iVRTDEX.')}{' '}
         </Text>
         <Text display="inline">
           {t('Lock more VRT for longer durations to increase the maximum number of VRT you can commit to the sale.')}

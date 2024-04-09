@@ -185,7 +185,7 @@ function ManageLists({
         }
 
         if (l1 && l2) {
-          // Always make Fluidex list in top.
+          // Always make Vrtdex list in top.
           const keyword = 'pancakeswap'
           if (l1.name.toLowerCase().includes(keyword) || l2.name.toLowerCase().includes(keyword)) {
             return -1

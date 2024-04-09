@@ -1,28 +1,28 @@
 import { UserResponse, BetResponse, HistoricalBetResponse, RoundResponse } from './responseType'
 
-export interface UserResponseFLUIDEX extends UserResponse<BetResponseFLUIDEX> {
-  totalFLUIDEX: string
-  totalFLUIDEXBull: string
-  totalFLUIDEXBear: string
-  averageFLUIDEX: string
-  totalFLUIDEXClaimed: string
-  netFLUIDEX: string
+export interface UserResponseVRTDEX extends UserResponse<BetResponseVRTDEX> {
+  totalVRTDEX: string
+  totalVRTDEXBull: string
+  totalVRTDEXBear: string
+  averageVRTDEX: string
+  totalVRTDEXClaimed: string
+  netVRTDEX: string
 }
 
-export interface BetResponseFLUIDEX extends BetResponse {
-  claimedFLUIDEX: string
-  claimedNetFLUIDEX: string
-  user?: UserResponseFLUIDEX
-  round?: RoundResponseFLUIDEX
+export interface BetResponseVRTDEX extends BetResponse {
+  claimedVRTDEX: string
+  claimedNetVRTDEX: string
+  user?: UserResponseVRTDEX
+  round?: RoundResponseVRTDEX
 }
 
-export type HistoricalBetResponseFLUIDEX = HistoricalBetResponse<UserResponseFLUIDEX>
+export type HistoricalBetResponseVRTDEX = HistoricalBetResponse<UserResponseVRTDEX>
 
-export type RoundResponseFLUIDEX = RoundResponse<BetResponseFLUIDEX>
+export type RoundResponseVRTDEX = RoundResponse<BetResponseVRTDEX>
 
-export interface TotalWonMarketResponseFLUIDEX {
-  totalFLUIDEX: string
-  totalFLUIDEXTreasury: string
+export interface TotalWonMarketResponseVRTDEX {
+  totalVRTDEX: string
+  totalVRTDEXTreasury: string
 }
 
 /**
@@ -63,8 +63,8 @@ export const betBaseFields = `
  claimedAt
  claimedHash
  claimedBlock
- claimedFLUIDEX
- claimedNetFLUIDEX
+ claimedVRTDEX
+ claimedNetVRTDEX
  createdAt
  updatedAt
 `
@@ -77,12 +77,12 @@ export const userBaseFields = `
   totalBets
   totalBetsBull
   totalBetsBear
-  totalFLUIDEX
-  totalFLUIDEXBull
-  totalFLUIDEXBear
+  totalVRTDEX
+  totalVRTDEXBull
+  totalVRTDEXBear
   totalBetsClaimed
-  totalFLUIDEXClaimed
+  totalVRTDEXClaimed
   winRate
-  averageFLUIDEX
-  netFLUIDEX
+  averageVRTDEX
+  netVRTDEX
 `

@@ -10,7 +10,7 @@ import { PancakeDayDatasResponse } from '../types'
 /**
  * Data for displaying Liquidity and Volume charts on Overview page
  */
-const FLUIDEX_DAY_DATAS = gql`
+const VRTDEX_DAY_DATAS = gql`
   query overviewCharts($startTime: Int!, $skip: Int!) {
     pancakeDayDatas(first: 1000, skip: $skip, where: { date_gt: $startTime }, orderBy: date, orderDirection: asc) {
       date
@@ -22,7 +22,7 @@ const FLUIDEX_DAY_DATAS = gql`
 
 const getOverviewChartData = async (skip: number): Promise<{ data?: ChartEntry[]; error: boolean }> => {
   try {
-    const { pancakeDayDatas } = await infoClient.request<PancakeDayDatasResponse>(FLUIDEX_DAY_DATAS, {
+    const { pancakeDayDatas } = await infoClient.request<PancakeDayDatasResponse>(VRTDEX_DAY_DATAS, {
       startTime: PCS_V2_START,
       skip,
     })
