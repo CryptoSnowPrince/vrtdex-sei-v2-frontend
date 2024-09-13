@@ -13,26 +13,26 @@
     {
       "name": "Wrapped SEI",
       "symbol": "WSEI",
-      "address": "0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22",
-      "chainId": 713715,
+      "address": "0xB8d62B7ACB6567a3360A4b70D6921AbF24ab9498",
+      "chainId": 1329,
       "decimals": 18,
-      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22.png"
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0xB8d62B7ACB6567a3360A4b70D6921AbF24ab9498.png"
     },
     {
       "name": "VRToken",
       "symbol": "VRT",
-      "address": "0x2781F210E1f627509bAa50B15333bED967e413A2",
-      "chainId": 713715,
+      "address": "0xA471b1596E3f19555222f7916D13fe90676B5027",
+      "chainId": 1329,
       "decimals": 18,
-      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x2781F210E1f627509bAa50B15333bED967e413A2.png"
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0xA471b1596E3f19555222f7916D13fe90676B5027.png"
     },
     {
       "name": "Tether USD",
       "symbol": "USDT",
-      "address": "0x6572bee203c2906175D5AcDbd11917E06Cc1D545",
-      "chainId": 713715,
+      "address": "0xb75d0b03c06a926e488e2659df1a861f860bd3d1",
+      "chainId": 1329,
       "decimals": 18,
-      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0x6572bee203c2906175D5AcDbd11917E06Cc1D545.png"
+      "logoURI": "https://v2.vrtdex.metabest.tech/images/tokens/0xb75d0b03c06a926e488e2659df1a861f860bd3d1.png"
     },
     {
       "name": "WBNB Token",

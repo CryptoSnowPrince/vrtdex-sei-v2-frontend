@@ -2,7 +2,7 @@ import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
 
 const VRTDEX_MAINNET = new Token(
   ChainId.BSC,
-  '0x2781F210E1f627509bAa50B15333bED967e413A2',
+  '0xA471b1596E3f19555222f7916D13fe90676B5027',
   18,
   'VRT',
   'VRToken',
@@ -143,7 +143,7 @@ export const bscTokens = {
   ),
   usdt: new Token(
     ChainId.BSC,
-    '0x6572bee203c2906175D5AcDbd11917E06Cc1D545',
+    '0xb75d0b03c06a926e488e2659df1a861f860bd3d1',
     18,
     'USDT',
     'Tether USD',

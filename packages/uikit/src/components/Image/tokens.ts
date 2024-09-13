@@ -7,7 +7,7 @@ const tokens = {
     address: {
       56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
-      713715: "0x2781F210E1f627509bAa50B15333bED967e413A2",
+      1329: "0xA471b1596E3f19555222f7916D13fe90676B5027",
     },
     decimals: 18,
     projectLink: "https://seitrace.com/",
@@ -438,7 +438,7 @@ const tokens = {
   wbnb: {
     symbol: "WSEI",
     address: {
-      713715: "0x90bF6ED0f547e20D6589078F1Ae5bb3729af3E22",
+      1329: "0xB8d62B7ACB6567a3360A4b70D6921AbF24ab9498",
       56: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       97: "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
     },
@@ -747,7 +747,7 @@ const tokens = {
     address: {
       56: "0x55d398326f99059fF775485246999027B3197955",
       97: "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
-      713715: "0x6572bee203c2906175D5AcDbd11917E06Cc1D545",
+      1329: "0xb75d0b03c06a926e488e2659df1a861f860bd3d1",
     },
     decimals: 18,
     projectLink: "https://tether.to/",

@@ -7,7 +7,7 @@ export enum ChainId {
   // ETHEREUM = 1,
   // RINKEBY = 4,
   // BSC = 56,
-  BSC = 713715,
+  BSC = 1329,
   BSC_TESTNET = 97,
 }
 
@@ -22,7 +22,7 @@ export enum Rounding {
   ROUND_UP,
 }
 
-export const FACTORY_ADDRESS = '0x76465435cE2997E09F4E79de493f1E363cEe2c58'
+export const FACTORY_ADDRESS = '0x9c5614fce34DE9784C51Dc60d5f423806f01Ab53'
 
 export const FACTORY_ADDRESS_MAP = {
   [ChainId.BSC]: FACTORY_ADDRESS,

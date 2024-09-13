@@ -79,20 +79,22 @@ export const fantomTestnet: Chain = {
 const bscExplorer = { name: 'SeiTrace', url: 'https://seitrace.com/' }
 
 export const bsc: Chain = {
-  id: 713715,
+  id: 1329,
   name: 'SEI Testnet',
   network: 'SEI',
   rpcUrls: {
-    default: 'https://evm-rpc.arctic-1.seinetwork.io',
-    public: 'https://evm-rpc.arctic-1.seinetwork.io',
+    default: 'https://evm-rpc.sei-apis.com',
+    public: 'https://evm-rpc.sei-apis.com',
+    // default: 'https://evm-rpc.arctic-1.seinetwork.io',
+    // public: 'https://evm-rpc.arctic-1.seinetwork.io',
   },
   blockExplorers: {
     default: bscExplorer,
     etherscan: bscExplorer,
   },
   multicall: {
-    address: '0x530843f12cF0E3285707AC57AaAed606F7EEb0cf',
-    blockCreated: 14225719,
+    address: '0xBcBDFC729fDe7265768aCE628547605b28ea35b9',
+    blockCreated: 101780309,
   },
   nativeCurrency: {
     name: 'SEI',
